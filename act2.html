@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function multiplynumbers() {
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
+
+            multiply = (parseInt(num1)) * (parseInt(num));
+
+            alert ("total Cost:" + multiply);
+        }
+
+        function multiplynumbers(){
+
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
+            multiply = (parseInt(num1)) * (parseInt (num2));
+
+            document.getElementById("result").innerHTML = "The Result is: " + multiply;
+
+        }
+
+        function dividenumbers(){
+
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
+            divide = (parseInt(num1)) / (parseInt (num2));
+
+            document.getElementById("result").innerHTML = "The Result is: " + divide;
+
+        }
+        
+    </script>
+    <p> 1st Number: <input type="text" size="20" id="num1"> </p>
+    <p> 2nd Number: <input type="text" size="20" id="num2"> </p>
+
+    <input type="button" value="Multiply" onclick="multiplynumbers()"> 
+    <input type="button" value="Divide" onclick="dividenumbers()">
+    <p id="result"> </p>
+
+</body>
+</html>
